@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html  lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial scale="1.0">
+        <title>Nishat Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <h4>Nishat</h4>
+                <div class="nav-menu" Id="navmenu">
+                    <span onclick="hideMenu()">X</span>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li> <input type="text" name="search"> <input type="submit" name="submit"
+                            value="search"></li>
+                    </ul>
+                </div>
+                <span onclick="openMenu()">Menu</span>
+                <img src="image/my pic.jpg" class="profile-image">
+            </nav>
+            <div class="title-discription">
+                <h1>Nishat</h1>
+                <p>
+                    My name is Naimur Rahman Nishat. I am a student and<br> web devoloper.
+                    This is my 3rd project. I am expart in<br> HTML, CSS, PYTHON, C etc.
+                </p>
+                <a href="#">Hear Me</a> &nbsp; <a href="#">About Me</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var navemenu= document.getElementById('navmenu')
+            function openMenu() {
+                navemenu.style.right="0";
+            }
+            function hideMenu() {
+                navemenu.style.right="-300px";
+            }
+        </script>
+    </body>
+</html>
